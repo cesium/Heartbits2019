@@ -16,6 +16,7 @@ analytics: #
 
 # Reading Files
 include:
+  - _pages
 exclude:
   - .gitignore
   - .editorconfig
