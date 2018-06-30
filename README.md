@@ -1,9 +1,13 @@
-<p align="center">
+[semaphoreci]: https://semaphoreci.com/cesiuminho/heartbits2018
+
+<h1 align="center">
   <a href="http://heartbits.pt" target="_blank">
     <img src="img/logo_grey.png" alt="HeartBits" width="350">
   </a>
   <br>
-</p>
+</h1>
+
+[![Build Status](https://semaphoreci.com/api/v1/cesiuminho/heartbits2018/branches/master/badge.svg)][semaphoreci]
 
 A Hackathon HeartBits de 2018 é um evento de organização conjunta da Associação
 Nacional de Estudantes de Medicina (ANEM), do Centro de Estudantes de
