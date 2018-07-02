@@ -14,6 +14,15 @@ previous_edition: https://2017.heartbits.pt
 # Tracker
 analytics: #
 
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-slim
+  - jemoji
+
 # Reading Files
 include:
   - _pages
