@@ -1,5 +1,4 @@
 [anem]: http://anem.pt
-[apef]: http://www.apef.pt
 [cesium]: http://www.cesium.di.uminho.pt
 [uminho]: http://www.uminho.pt
 
