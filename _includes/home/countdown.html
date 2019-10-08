@@ -1,21 +1,21 @@
 <section id="countdown">
-  <h1>Time to work is Over!</h1>
+  <h1>Time until event:</h1>
 
   <div id="clockdiv">
     <div>
-      <span class="days"></span>
+      <span id="days"></span>
       <div class="smalltext">Days</div>
     </div>
     <div>
-      <span class="hours"></span>
+      <span id="hours"></span>
       <div class="smalltext">Hours</div>
     </div>
     <div>
-      <span class="minutes"></span>
+      <span id="minutes"></span>
       <div class="smalltext">Minutes</div>
     </div>
     <div>
-      <span class="seconds"></span>
+      <span id="seconds"></span>
       <div class="smalltext">Seconds</div>
     </div>
   </div>
@@ -23,4 +23,27 @@
 </section>
 
 <script>
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let countDown = new Date('Nov 2, 2019 00:00:00').getTime(),
+      x = setInterval(function() {
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById('days').innerText = Math.floor(distance / (day)),
+          document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+        
+        //do something later when date is reached
+        //if (distance < 0) {
+        //  clearInterval(x);
+        //  'IT'S MY BIRTHDAY!;
+        //}
+
+      }, second)
 </script>
