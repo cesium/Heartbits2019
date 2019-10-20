@@ -1,22 +1,22 @@
 <section id="countdown">
-  <h1>Time until event:</h1>
+  <h1>Inscrições abertas durante:</h1>
 
   <div id="clockdiv">
     <div>
       <span id="days"></span>
-      <div class="smalltext">Days</div>
+      <div class="smalltext">Dias</div>
     </div>
     <div>
       <span id="hours"></span>
-      <div class="smalltext">Hours</div>
+      <div class="smalltext">Horas</div>
     </div>
     <div>
       <span id="minutes"></span>
-      <div class="smalltext">Minutes</div>
+      <div class="smalltext">Minutos</div>
     </div>
     <div>
       <span id="seconds"></span>
-      <div class="smalltext">Seconds</div>
+      <div class="smalltext">Segundos</div>
     </div>
   </div>
 
@@ -28,7 +28,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-  let countDown = new Date('Nov 2, 2019 00:00:00').getTime(),
+  let countDown = new Date('Nov 1, 2019 23:59:59').getTime(),
       x = setInterval(function() {
 
         let now = new Date().getTime(),
